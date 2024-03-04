@@ -1,0 +1,15 @@
+GET http://localhost:8080/students/all
+
+#####
+
+
+POST http://localhost:8080/students/add
+
+Accept : application/json
+Content-Type: application/json
+
+{
+  "email" : "bindu@gmail.com",
+  "password":221234
+    
+}

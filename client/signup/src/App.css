@@ -1,0 +1,30 @@
+.container{
+  height: 100%;
+  width: 100%;
+
+}
+
+.simple_signup{
+  height: 100%;
+  width: 100%;
+  
+}
+
+
+form input{
+  display: block;
+  padding: 5px;
+  width: 200px;
+  height: 15px;
+  margin: 10px;
+
+}
+
+button{
+  height: 20px;
+  width:100px;
+  margin: 10px;
+  margin-left: 50px;
+  background-color: yellow;
+}
+
