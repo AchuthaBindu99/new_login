@@ -1,14 +1,18 @@
 import './App.css';
-import {useState , useEffect} from "react";
+import {useState } from "react";
 
 const App = () => {
 
-  const [form, setForm] = useState({})
+  const [form, setForm] = useState({
+    email: "",
+    password:""
+  })
 
 
   const submitData  = (e) => {
     e.preventDefault()
-     fetch("http://localhost:8080/students/add", {
+    console.log(form)
+     fetch("http://localhost:8080/add", {
       method:"POST",
       headers:{
         "Accept" : "application/json",
@@ -22,7 +26,7 @@ const App = () => {
   return (
     <div className="container">
        <div className='simple_signup'>
-        <form method= "GET"  onSubmit = {submitData} >
+        <form onSubmit = {submitData} >
           <input  name = "email"  type = "email" placeholder="Email Address"
            onChange={(e) => setForm({...form, email:e.target.value})}
           required />
